@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white font-sans text-[17px] leading-relaxed text-body antialiased;
+  }
+  a {
+    @apply text-leaf underline-offset-4;
+  }
+  :focus-visible {
+    outline: 3px solid #f5b301;
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
